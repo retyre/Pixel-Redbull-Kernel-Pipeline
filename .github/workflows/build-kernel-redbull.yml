@@ -170,7 +170,7 @@ jobs:
           cd "$CONFIG/private/msm-google/"
           
           echo "Adding KernelSU..."
-          curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s v3.2.5
+          curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s v0.9.5
 
       - name: Add KernelSU-Next
         if: ${{ github.event.inputs.kernel_root == 'kernelSU-Next' }}
@@ -179,7 +179,7 @@ jobs:
           cd "$CONFIG/private/msm-google/"
           
           echo "Adding KernelSU_Next..."
-          curl -LSs "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/next/kernel/setup.sh" | bash -s v3.3.0
+          curl -LSs "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/next/kernel/setup.sh" | bash -s v1.1.1
 
       # - name: Add SukiSU Ultra
       #   if: ${{ github.event.inputs.kernel_root == 'SukiSU' }}
